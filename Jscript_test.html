@@ -6,12 +6,16 @@
 	</head>
 	<body>
 		<script>
-			var arr1 = [ 10, 90, 30, 50, 40 ];
-			arr1.sort();
-			console.log( arr1 );
-			var arr2 = [ "中文", "aa", "AA", "AB", 1, 2 ];
-			arr2.sort();
-			console.log( arr2 );
+			var string="";
+			for( var j = 0; j<10; j++)
+			{			
+				for( var i = 1; i<j+1; i++ )
+				{				
+					string += i;
+				}
+				string += "\n" ;
+			}
+			console.log( string );
 		</script>
 	</body>
 </html>
