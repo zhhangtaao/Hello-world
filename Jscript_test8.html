@@ -6,14 +6,12 @@
 	</head>
 	<body>
 		<script>
-			var arr1=[];
-			arr1[ "bookname"] = "三国演义";
-			arr1[ "author" ] = "罗贯中";
-			arr1[ "price" ] = "38.5";
-			arr1[ "publisher" ] = "清华大学出版社";
-			for( var i in arr1 )
+			var phonePatt = /1[35789]\d{9}/g;
+			var msg = '这是我的电话13012345678这是tom的电话138012345679999';
+			var result = null;
+			while( (result=phonePatt.exec(msg))!=null  )
 			{
-				console.log(arr1[i]);
+				console.log( result[0] );
 			}
 		</script>
 	</body>
